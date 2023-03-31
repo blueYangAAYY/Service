@@ -1,0 +1,16 @@
+D:\Test\VS_Scripts\Service\Service\bin\Debug\net5.0\Service.exe
+D:\Test\VS_Scripts\Service\Service\bin\Debug\net5.0\Service.deps.json
+D:\Test\VS_Scripts\Service\Service\bin\Debug\net5.0\Service.runtimeconfig.json
+D:\Test\VS_Scripts\Service\Service\bin\Debug\net5.0\Service.runtimeconfig.dev.json
+D:\Test\VS_Scripts\Service\Service\bin\Debug\net5.0\Service.dll
+D:\Test\VS_Scripts\Service\Service\bin\Debug\net5.0\ref\Service.dll
+D:\Test\VS_Scripts\Service\Service\bin\Debug\net5.0\Service.pdb
+D:\Test\VS_Scripts\Service\Service\obj\Debug\net5.0\Service.csprojAssemblyReference.cache
+D:\Test\VS_Scripts\Service\Service\obj\Debug\net5.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Test\VS_Scripts\Service\Service\obj\Debug\net5.0\Service.AssemblyInfoInputs.cache
+D:\Test\VS_Scripts\Service\Service\obj\Debug\net5.0\Service.AssemblyInfo.cs
+D:\Test\VS_Scripts\Service\Service\obj\Debug\net5.0\Service.csproj.CoreCompileInputs.cache
+D:\Test\VS_Scripts\Service\Service\obj\Debug\net5.0\Service.dll
+D:\Test\VS_Scripts\Service\Service\obj\Debug\net5.0\ref\Service.dll
+D:\Test\VS_Scripts\Service\Service\obj\Debug\net5.0\Service.pdb
+D:\Test\VS_Scripts\Service\Service\obj\Debug\net5.0\Service.genruntimeconfig.cache
