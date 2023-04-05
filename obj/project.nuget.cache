@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gkp+VQ8CFTfnUSJN9OGYbuh9rrUTqvtgaWCSZHH4uSj2PcGRNJ5tz3WGce/plmUeW3UWkX9rMIycmT/m3ivUWQ==",
+  "dgSpecHash": "8pzV9E1BZsaQWlCsWythOFn0hyx/IqrDSpLrltsReo4WI0+KPUnab2suYubSo7MVXnD9QHWxVeaUBsbwpNH8BA==",
   "success": true,
-  "projectFilePath": "D:\\Test\\VS_Scripts\\Service\\Service\\Service.csproj",
+  "projectFilePath": "E:\\UnityProject\\01_Test\\Service_Study\\Service\\Service.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
