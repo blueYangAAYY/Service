@@ -17,7 +17,14 @@ namespace Service
         /// <param name="c"></param>
         public static void OnDisconnect(ClientState c)
         {
-            Console.WriteLine("OnDisconnect");
+            string dec = c.socket.RemoteEndPoint.ToString();
+            string sendStr = "Leave|" + dec + ",";
+
+            //分发
+            foreach (ClientState state in MainClass.clients.Values)
+            {
+                MainClass.Send(state, sendStr);
+            }
         }
     }
 }

@@ -12,10 +12,13 @@ namespace Service
     /// </summary>
     static class MsgHandler
     {
+        /// <summary>
+        /// Enter
+        /// </summary>
+        /// <param name="c"></param>
+        /// <param name="msgArgs"></param>
         public static void MsgEnter(ClientState c, string msgArgs)
         {
-
-            Console.WriteLine(string.Format("接收到 客户端【{0}】的消息，协议为：Enter,消息为：{1}", msgArgs[0], msgArgs));
             //解析消息参数
             string[] split = msgArgs.Split(',');
 
@@ -41,10 +44,13 @@ namespace Service
             }
         }
 
+        /// <summary>
+        /// List
+        /// </summary>
+        /// <param name="c"></param>
+        /// <param name="msgArgs"></param>
         public static void MsgList(ClientState c, string msgArgs)
         {
-            Console.WriteLine(string.Format("接收到消息 协议为：List,消息为：{0}", msgArgs));
-
             string sendStr = "List|";
 
             //组装所有客户端信息
@@ -60,6 +66,47 @@ namespace Service
             }
 
             MainClass.Send(c, sendStr);
+        }
+
+        /// <summary>
+        /// Move
+        /// </summary>
+        public static void MsgMove(ClientState c, string msgArgs)
+        {
+            //解析消息参数
+            string[] split = msgArgs.Split(',');
+
+            string desc = split[0];
+            float x = float.Parse(split[1]);
+            float y = float.Parse(split[2]);
+            float z = float.Parse(split[3]);
+
+            //赋值
+            c.x = x;
+            c.y = y;
+            c.z = z;
+
+            string sendStr = "Move|" + msgArgs;
+            //分发
+            foreach (ClientState state in MainClass.clients.Values)
+            {
+                MainClass.Send(state, sendStr);
+            }
+        }
+
+        /// <summary>
+        /// Attack
+        /// </summary>
+        /// <param name="c"></param>
+        /// <param name="msgArgs"></param>
+        public static void MsgAttack(ClientState c, string msgArgs)
+        {
+            string sendStr = "Attack|" + msgArgs;
+            //分发
+            foreach (ClientState state in MainClass.clients.Values)
+            {
+                MainClass.Send(state, sendStr);
+            }
         }
     }
 }
