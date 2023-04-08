@@ -73,6 +73,7 @@ namespace Service
         /// </summary>
         public static void MsgMove(ClientState c, string msgArgs)
         {
+            Console.Write(msgArgs);
             //解析消息参数
             string[] split = msgArgs.Split(',');
 
